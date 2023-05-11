@@ -15,7 +15,7 @@ function processData(input) {
     let maiorDist = 0;
 
     for (let i = 0; i < n; i++) {
-        for (let j = 0; j < n; j++) {
+        for (let j = 1; j < n; j++) {
             const distancia = Math.sqrt(
                 Math.pow(coordenadas[i].x - coordenadas[j].x, 2) +
                     Math.pow(coordenadas[i].y - coordenadas[j].y, 2)
