@@ -4,11 +4,9 @@ let valorDiario = 0;
 
 let mediaDiaria = 0;
 
-if (lista.length > 0 && lista.length <= 1000) {
-    valorDiario = lista.reduce((contador, itemAtual) => {
-        return contador + itemAtual;
-    });
-    mediaDiaria = valorDiario / lista.length;
-}
+valorDiario = lista.reduce((contador, itemAtual) => {
+    return contador + itemAtual;
+});
+mediaDiaria = valorDiario / lista.length;
 
 console.log(mediaDiaria);
