@@ -16,7 +16,7 @@ const processData = input => {
             Math.ceil((grupos[3] * 3 + grupos[1]) / 4) +
             Math.ceil((grupos[2] * 2) / 4);
     } else if (grupos[1] > grupos[3]) {
-        if (grupos[3] != 0) {
+        if (grupos[3] !== 0) {
             numTaxis +=
                 Math.ceil((grupos[3] * 3 + grupos[3]) / 4) +
                 Math.ceil((grupos[2] * 2 + grupos[1] - grupos[3]) / 4);
@@ -24,7 +24,7 @@ const processData = input => {
             numTaxis += Math.ceil((grupos[2] * 2 + grupos[1]) / 4);
         }
     } else {
-        if (grupos[1] != 0) {
+        if (grupos[1] !== 0) {
             numTaxis +=
                 Math.ceil((grupos[1] * 3 + grupos[1]) / 4) +
                 Math.ceil(grupos[3] - grupos[1]) +
